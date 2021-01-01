@@ -17,12 +17,13 @@ namespace TestApp
         private static IDataAccess db;
         private static IFoodData foodData;
 
-        public static void InitConfig()
+        public static void DataAccessInit()
         {
             IConfigurationBuilder builder = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile("appsettings.json");
             _config = builder.Build();
+
             connectionString = new ConnectionStringData();
 
             db = new SqlDB(_config);
@@ -33,7 +34,7 @@ namespace TestApp
 
         static void Main(string[] args)
         {
-            InitConfig();
+            DataAccessInit();
 
             var food = foodData.GetFood().Result;
 

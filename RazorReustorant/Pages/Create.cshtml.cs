@@ -15,6 +15,7 @@ namespace RazorReustorant.Orders
         private readonly IFoodData _foodData;
         private readonly IOrderData _orderData;
 
+        
         public List<SelectListItem> FoodItems { get; set; }
 
         [BindProperty]
@@ -32,7 +33,12 @@ namespace RazorReustorant.Orders
 
             FoodItems = new List<SelectListItem>();
 
-            food.ForEach(x => FoodItems.Add(new SelectListItem{Value = x.Id.ToString(), Text = x.Title}));
+            foreach (var item in food)
+            {
+                FoodItems.Add(new SelectListItem {Value = item.Id.ToString(), Text = item.Title});
+            }
+
+            
         }
     }
 }
