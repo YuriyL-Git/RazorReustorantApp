@@ -8,6 +8,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using DataLibrary;
+using DataLibrary.Data;
+using DataLibrary.Db;
 
 namespace RazorReustorant
 {
@@ -23,7 +26,12 @@ namespace RazorReustorant
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddRazorPages();
+            services.AddRazorPages().AddRazorRuntimeCompilation();
+           
+            services.AddSingleton(new ConnectionStringData {SqlConnectionName = "Default"});
+            services.AddSingleton<IDataAccess, SqlDB>();
+            services.AddSingleton<IFoodData, FoodData>();
+            services.AddSingleton<IOrderData, OrderData>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

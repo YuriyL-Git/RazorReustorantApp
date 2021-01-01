@@ -6,7 +6,28 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.78" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="5.0.1" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="DataLibrary">
+      <HintPath>DataLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="DemoLibrary">
+      <HintPath>..\..\..\VS_Projects\RazorPagesMiniProjctApp\RazorPagesMiniProjct\DemoLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="DataLibrary.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Orders\" />
   </ItemGroup>
 
 </Project>
