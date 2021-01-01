@@ -52,3 +52,6 @@ C:\GitRepository\RazorReustorantApp\TestApp\bin\Debug\netcoreapp3.1\DataLibrary.
 C:\GitRepository\RazorReustorantApp\TestApp\bin\Debug\netcoreapp3.1\DataLibrary.pdb
 C:\GitRepository\RazorReustorantApp\TestApp\obj\Debug\netcoreapp3.1\TestApp.csproj.CopyComplete
 C:\GitRepository\RazorReustorantApp\TestApp\bin\Debug\netcoreapp3.1\appSettings.json
+C:\GitRepository\RazorReustorantApp\TestApp\bin\Debug\netcoreapp3.1\Nito.AsyncEx.Context.dll
+C:\GitRepository\RazorReustorantApp\TestApp\bin\Debug\netcoreapp3.1\Nito.AsyncEx.Tasks.dll
+C:\GitRepository\RazorReustorantApp\TestApp\bin\Debug\netcoreapp3.1\Nito.Disposables.dll

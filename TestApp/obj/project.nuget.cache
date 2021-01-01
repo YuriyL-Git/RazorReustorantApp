@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "k1kQU7V1b0IDJRrwytoO1bdz8fdl6sBfECbRYiknzZn1O2sJNkXvCbaJ5WRO7cXsVFcW/SwZzsS1qFGaqzhgwg==",
+  "dgSpecHash": "Mzzh9yVBmLzQQm0RwNs5Kgpn+Jt8GsdyHDcMFVDwITA+Lpt4Vw4wxWBW75Hhnxtq1ed7FFTKDVjEeoh+R8sfHw==",
   "success": true,
   "projectFilePath": "C:\\GitRepository\\RazorReustorantApp\\TestApp\\TestApp.csproj",
   "expectedPackageFiles": [
@@ -25,6 +25,10 @@
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\nito.asyncex.context\\5.1.0\\nito.asyncex.context.5.1.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\nito.asyncex.tasks\\5.1.0\\nito.asyncex.tasks.5.1.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\nito.disposables\\2.2.0\\nito.disposables.2.2.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.collections.immutable\\1.4.0\\system.collections.immutable.1.4.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.configuration.configurationmanager\\4.7.0\\system.configuration.configurationmanager.4.7.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.0\\system.diagnostics.diagnosticsource.4.7.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",

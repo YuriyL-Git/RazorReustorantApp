@@ -129,6 +129,10 @@
             "Microsoft.Extensions.Configuration.Json": {
               "target": "Package",
               "version": "[5.0.0, )"
+            },
+            "Nito.AsyncEx.Context": {
+              "target": "Package",
+              "version": "[5.1.0, )"
             }
           },
           "imports": [

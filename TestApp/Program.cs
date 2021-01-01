@@ -6,42 +6,45 @@ using DataLibrary.Data;
 using DataLibrary.Db;
 using DataLibrary.Models;
 using Microsoft.Extensions.Configuration;
+using Nito.AsyncEx;
 
 namespace TestApp
 {
     class Program
     {
+        private static  IConfiguration _config;
+        private static ConnectionStringData  connectionString;
+        private static IDataAccess db;
+        private static IFoodData foodData;
 
-
-        static void Main(string[] args)
-        {
-
-           
-        }
-
-
-
-        public static async Task GetFood()
+        public static void InitConfig()
         {
             IConfigurationBuilder builder = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile("appsettings.json");
-            IConfiguration config = builder.Build();
-            ConnectionStringData connectionString = new ConnectionStringData();
+            _config = builder.Build();
+            connectionString = new ConnectionStringData();
 
-            IDataAccess db = new SqlDB(config);
-            IFoodData foodData = new FoodData(db, connectionString);
-
-            var listOfFood =  await foodData.GetFood();
-
-            int x = 5;
-            foreach (var food in listOfFood)
-            {
-                Console.WriteLine(food.Title);
-            }
-          
-
+            db = new SqlDB(_config);
+            foodData = new FoodData(db, connectionString);
 
         }
+
+
+        static void Main(string[] args)
+        {
+            InitConfig();
+
+            var food = foodData.GetFood().Result;
+
+            foreach (var f in food)
+            {
+                Console.WriteLine(f.Title);
+            }
+        }
+
+
+
+       
     }
 }
