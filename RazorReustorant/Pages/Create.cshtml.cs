@@ -38,7 +38,26 @@ namespace RazorReustorant.Orders
                 FoodItems.Add(new SelectListItem {Value = item.Id.ToString(), Text = item.Title});
             }
 
-            
         }
+
+        public async Task<IActionResult> OnPost()
+        {
+            if (ModelState.IsValid == false)
+            {
+                return Page();
+            }
+
+            var food = await _foodData.GetFood();
+
+           // Order.Total = Order.Quantity * food.Where(x => x.Id == Order.FoodId).First().Price;
+
+            Order.Total = Order.Quantity * _foodData.GetFoodById(Order.FoodId).Price;
+
+           int id = await _orderData.CreateOrder(Order);
+
+           return RedirectToPage("/create");
+        }
+
+
     }
 }

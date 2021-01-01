@@ -7,5 +7,6 @@ namespace DataLibrary.Data
     public interface IFoodData
     {
         Task<List<FoodModel>> GetFood();
+        public FoodModel GetFoodById(int id);
     }
 }

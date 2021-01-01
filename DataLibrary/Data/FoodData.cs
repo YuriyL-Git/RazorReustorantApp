@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DataLibrary.Db;
@@ -22,6 +23,13 @@ namespace DataLibrary.Data
         {
             return _dataAccess.LoadData<FoodModel, dynamic>("dbo.spFood_All", new { },
                                      _connectionString.SqlConnectionName);
+
+        }
+
+        public FoodModel GetFoodById(int id)
+        {
+            return _dataAccess.LoadData<FoodModel, dynamic>("dbo.spFood_GetById", new {Id = id},
+                _connectionString.SqlConnectionName).Result.FirstOrDefault();
 
         }
     }
