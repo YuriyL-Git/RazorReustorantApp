@@ -18,12 +18,13 @@ namespace DataLibrary.Models
 
         public DateTime OrderDate { get; set; } = DateTime.UtcNow;
 
-        [DisplayName("Meal")]
+        [DisplayName("Meals")]
         [Range(1, int.MaxValue, ErrorMessage = "Incorrect!")]
         public int FoodId { get; set; }
 
         [Required]
-        [Range(1,10, ErrorMessage = "You cant order more than 10 items of food!")]
+        [Range(1,10, ErrorMessage = "You cant order more than 10 or less than 0 items of food!")]
+        [DisplayName("Quantity of items")]
         public int Quantity { get; set; }
 
         public decimal Total { get; set; }

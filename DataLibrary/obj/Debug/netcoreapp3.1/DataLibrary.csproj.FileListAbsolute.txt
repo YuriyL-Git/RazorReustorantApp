@@ -7,3 +7,12 @@ C:\GitRepository\ReustorantApp(AspNet)\DataLibrary\bin\Debug\netcoreapp3.1\DataL
 C:\GitRepository\ReustorantApp(AspNet)\DataLibrary\bin\Debug\netcoreapp3.1\DataLibrary.pdb
 C:\GitRepository\ReustorantApp(AspNet)\DataLibrary\obj\Debug\netcoreapp3.1\DataLibrary.dll
 C:\GitRepository\ReustorantApp(AspNet)\DataLibrary\obj\Debug\netcoreapp3.1\DataLibrary.pdb
+C:\GitRepository\RazorReustorantApp\DataLibrary\bin\Debug\netcoreapp3.1\DataLibrary.deps.json
+C:\GitRepository\RazorReustorantApp\DataLibrary\bin\Debug\netcoreapp3.1\DataLibrary.dll
+C:\GitRepository\RazorReustorantApp\DataLibrary\bin\Debug\netcoreapp3.1\DataLibrary.pdb
+C:\GitRepository\RazorReustorantApp\DataLibrary\obj\Debug\netcoreapp3.1\DataLibrary.csprojAssemblyReference.cache
+C:\GitRepository\RazorReustorantApp\DataLibrary\obj\Debug\netcoreapp3.1\DataLibrary.AssemblyInfoInputs.cache
+C:\GitRepository\RazorReustorantApp\DataLibrary\obj\Debug\netcoreapp3.1\DataLibrary.AssemblyInfo.cs
+C:\GitRepository\RazorReustorantApp\DataLibrary\obj\Debug\netcoreapp3.1\DataLibrary.csproj.CoreCompileInputs.cache
+C:\GitRepository\RazorReustorantApp\DataLibrary\obj\Debug\netcoreapp3.1\DataLibrary.dll
+C:\GitRepository\RazorReustorantApp\DataLibrary\obj\Debug\netcoreapp3.1\DataLibrary.pdb
