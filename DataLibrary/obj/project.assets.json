@@ -506,21 +506,6 @@
             "rid": "win"
           }
         }
-      },
-      "DataLibrary/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "dependencies": {
-          "Dapper": "2.0.78",
-          "Microsoft.Data.SqlClient": "2.1.1",
-          "Microsoft.Extensions.Configuration.Json": "5.0.0"
-        },
-        "compile": {
-          "bin/placeholder/DataLibrary.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/DataLibrary.dll": {}
-        }
       }
     }
   },
@@ -1602,16 +1587,12 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
-    },
-    "DataLibrary/1.0.0": {
-      "type": "project",
-      "path": "../DataLibrary/DataLibrary.csproj",
-      "msbuildProject": "../DataLibrary/DataLibrary.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "DataLibrary >= 1.0.0",
+      "Dapper >= 2.0.78",
+      "Microsoft.Data.SqlClient >= 2.1.1",
       "Microsoft.Extensions.Configuration.Json >= 5.0.0"
     ]
   },
@@ -1623,11 +1604,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\GitRepository\\RazorReustorantApp\\TestApp\\TestApp.csproj",
-      "projectName": "TestApp",
-      "projectPath": "C:\\GitRepository\\RazorReustorantApp\\TestApp\\TestApp.csproj",
+      "projectUniqueName": "C:\\GitRepository\\RazorReustorantApp\\DataLibrary\\DataLibrary.csproj",
+      "projectName": "DataLibrary",
+      "projectPath": "C:\\GitRepository\\RazorReustorantApp\\DataLibrary\\DataLibrary.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\GitRepository\\RazorReustorantApp\\TestApp\\obj\\",
+      "outputPath": "C:\\GitRepository\\RazorReustorantApp\\DataLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -1650,11 +1631,7 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {
-            "C:\\GitRepository\\RazorReustorantApp\\DataLibrary\\DataLibrary.csproj": {
-              "projectPath": "C:\\GitRepository\\RazorReustorantApp\\DataLibrary\\DataLibrary.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -1667,6 +1644,14 @@
       "netcoreapp3.1": {
         "targetAlias": "netcoreapp3.1",
         "dependencies": {
+          "Dapper": {
+            "target": "Package",
+            "version": "[2.0.78, )"
+          },
+          "Microsoft.Data.SqlClient": {
+            "target": "Package",
+            "version": "[2.1.1, )"
+          },
           "Microsoft.Extensions.Configuration.Json": {
             "target": "Package",
             "version": "[5.0.0, )"

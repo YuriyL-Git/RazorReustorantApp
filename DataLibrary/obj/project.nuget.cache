@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "k1kQU7V1b0IDJRrwytoO1bdz8fdl6sBfECbRYiknzZn1O2sJNkXvCbaJ5WRO7cXsVFcW/SwZzsS1qFGaqzhgwg==",
+  "dgSpecHash": "4gUzqH79BNvEf0qLSv71Lv/CeNwYO1MpA372CAluVpGmYXXFcNHZ6xTG1I8g5OF7Rj0MtFLk1TQtcQ44SSnocw==",
   "success": true,
-  "projectFilePath": "C:\\GitRepository\\RazorReustorantApp\\TestApp\\TestApp.csproj",
+  "projectFilePath": "C:\\GitRepository\\RazorReustorantApp\\DataLibrary\\DataLibrary.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\dapper\\2.0.78\\dapper.2.0.78.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
