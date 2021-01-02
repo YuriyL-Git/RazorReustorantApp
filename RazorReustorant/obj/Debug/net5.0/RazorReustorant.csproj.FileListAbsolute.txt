@@ -380,3 +380,4 @@ C:\GitRepository\RazorReustorantApp\RazorReustorant\bin\Debug\net5.0\DataLibrary
 C:\GitRepository\RazorReustorantApp\RazorReustorant\obj\Debug\net5.0\Razor\Pages\Orders\Create.cshtml.g.cs
 C:\GitRepository\RazorReustorantApp\RazorReustorant\obj\Debug\net5.0\Razor\Pages\Orders\Display.cshtml.g.cs
 C:\GitRepository\RazorReustorantApp\RazorReustorant\obj\Debug\net5.0\Razor\Pages\Food\List.cshtml.g.cs
+C:\GitRepository\RazorReustorantApp\RazorReustorant\obj\Debug\net5.0\Razor\Pages\Orders\Delete.cshtml.g.cs
