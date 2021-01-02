@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorReustorant", "RazorReustorant\RazorReustorant.csproj", "{E0F899B5-7439-4EDF-94A5-88399E82DD54}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorReustorant", "RazorReustorant\RazorReustorant.csproj", "{E0F899B5-7439-4EDF-94A5-88399E82DD54}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp", "TestApp\TestApp.csproj", "{4D8D86D7-F5F7-4F84-AC03-EED9EE69BFDF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestApp", "TestApp\TestApp.csproj", "{4D8D86D7-F5F7-4F84-AC03-EED9EE69BFDF}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataLibrary", "DataLibrary\DataLibrary.csproj", "{43B36B27-683C-4BA5-8CC8-BD3F7762A335}"
 EndProject

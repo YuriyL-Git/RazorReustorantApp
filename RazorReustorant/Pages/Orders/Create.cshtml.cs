@@ -55,7 +55,7 @@ namespace RazorReustorant.Orders
 
            int id = await _orderData.CreateOrder(Order);
 
-           return RedirectToPage("/create");
+           return RedirectToPage("./Display", new {Id = id});
         }
 
 
