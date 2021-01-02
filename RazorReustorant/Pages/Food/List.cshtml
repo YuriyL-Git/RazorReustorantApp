@@ -1,4 +1,28 @@
 ﻿@page
+@using System.Globalization
 @model RazorReustorant.Pages.Food.ListModel
 @{
 }
+<h1>List of food</h1>
+
+<table class="table table-striped table-hover">
+    <thead class="thead-dark">
+    <tr>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Price</th>
+    </tr>
+    </thead>
+    
+    <tbody>
+        @foreach (var food in Model.Food)
+        {
+        <tr>
+            <td>@food.Title</td>
+            <td>@food.Description</td>
+            <td>@string.Format(CultureInfo.GetCultureInfo("en-US"), "{0:C}", food.Price)</td>
+        </tr>
+        }
+    </tbody>
+
+</table>
